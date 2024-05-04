@@ -6,9 +6,9 @@ Unofficial TikTok App for WebOS with extended features
 
 ## Extended Features
 ### HotKeys
-* 🔴 - Like/Dislike 
-* 🟢 - Rewind five seconds
-* 🟡 - Fast-forward five seconds
+* 🔴 Like/Dislike 
+* 🟢 Rewind five seconds
+* 🟡 Fast-forward five seconds
 
 ## Installation
 

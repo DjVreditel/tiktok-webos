@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>                            <html>                                <head>                                    <meta charset="UTF-8">                                    <title>README</title>                                    <link rel="stylesheet" href="./style/style.css">                                    <link rel="stylesheet" href="./style/kimbie.dark.css">                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                    <style>*,body{margin:0;padding:0}.markdown-content,*{font-family:Vazir}*{box-sizing:border-box}html{font-size:14px}.markdown-content p,.rtl ol li,.rtl ul li{font-size:1.1rem}body{direction:rtl;color:#24292e}.ltr{direction:ltr!important}.rtl{direction:rtl!important}@media screen and (max-width:600px){body{padding:0 50px 50px}}@media screen and (min-width:601px){body{padding:50px}}@font-face{font-family:Vazir;src:url(fonts/Vazir.woff)}@font-face{font-family:DejaVuSansMono;src:url(fonts/DejaVuSansMono.ttf)}.markdown-content{width:100%;outline-offset:-22px;padding:15px;line-height:3rem}code,code span,pre code span,ul li pre code{font-family:DejaVuSansMono,Menlo,'Liberation Mono',Consolas,'DejaVu Sans Mono','Ubuntu Mono','Courier New','andale mono','lucida console',monospace!important}.markdown-content p{text-align:justify;padding:.5rem}.markdown-content img{margin:0 auto;display:block;max-width:90%}.rtl ul li{margin-right:3rem!important}.rtl ol li{margin-right:3rem}.ltr ol li,.ltr ul li{font-size:1.1rem;margin-left:3rem}.markdown-content h1,.markdown-content h2,.markdown-content h3{padding:12px;text-shadow:none}.markdown-content h1{padding-top:60px;color:rgba(22,19,19,.8);font-weight:900;font-size:2.1rem}.markdown-content h2{font-weight:500;color:rgba(22,19,19,.6);font-size:1.8rem}.markdown-content h3{font-weight:300;color:rgba(22,19,19,.4);font-size:1.5rem}.markdown-content h4,.markdown-content h5{font-weight:200;color:rgba(22,19,19,.4)}.markdown-content h4{font-size:1.3rem}.markdown-content h5{font-size:1.2rem}@media screen and (min-width:48rem){#list{width:20%}#content{width:100%}}@media screen and (min-width:80rem){#list.none{display:inline-block}#content{width:80%}}@media print{#list{display:none}#content{display:block;width:100%;margin:0 auto}#content li,#content p{font-size:1rem}}.manual-anchor{top:45px}.markdown-container{max-width:1448px;margin:0 auto}.manual-link-icon{color:#8f8f8f}.manual-link-icon:hover{color:#000}code,ul li pre code{white-space:pre;word-wrap:normal;padding:3px 7px;color:#24292e;background-color:rgba(27,31,35,.05);border-radius:3px;font-size:1rem}.markdown-content ul li pre,.manual ul li pre,pre{margin:0;direction:ltr!important}.markdown-content ul li pre code,.manual ul li pre code,pre code{direction:ltr!important;line-height:1.45;padding:1em 0 .5em 3em;position:relative;display:block;overflow-x:auto;overflow-y:auto}a{text-decoration:none}.title{float:left;color:#ccc}.elements{padding:12px;position:fixed;top:0;right:0;left:0;background-color:#444;height:50px;z-index:1}.input{color:#fff}#savebutton,input{font-size:15px}#savebutton{padding:0 7px!important}#rtl-checkbox-container{margin:3px 15px!important;color:#fff}.button{background-color:#fff;color:#444;font-size:1.6rem;display:inline-block;text-align:center;line-height:2.1rem;border-radius:2px}.button:hover{cursor:pointer;background-color:#eee}#refresh-button{width:2.2rem;vertical-align:middle}@media print{.no-print,.no-print *{display:none!important}}.hljs-comment,.hljs-quote{color:#99ac5b}.hljs-meta,.hljs-name,.hljs-regexp,.hljs-selector-class,.hljs-selector-id,.hljs-tag,.hljs-template-variable,.hljs-variable{color:#dc3958}.hljs-built_in,.hljs-builtin-name,.hljs-deletion,.hljs-link,.hljs-literal,.hljs-number,.hljs-params,.hljs-type{color:#f79a32}.hljs-attribute,.hljs-section,.hljs-title{color:#d9556d}.hljs-addition,.hljs-bullet,.hljs-string,.hljs-symbol{color:#53a382}.hljs-function,.hljs-keyword,.hljs-selector-tag{color:#98676a}.hljs{display:block;overflow-x:auto;background:#21242b;color:#b670cb}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}</style>                                </head>                                <body><div class="markdown-container ltr"><div class="markdown-content"><h1 id="tiktok-webos">TikTok WebOS</h1>
+<p>Unofficial TikTok App for WebOS with extended features</p>
+<p><img src='../assets/splash.png' alt="Splash"></p>
+<h2 id="extended-features">Extended Features</h2>
+<h3 id="hotkeys">HotKeys</h3>
+<ul>
+<li>🔴 Like/Dislike </li>
+<li>🟢 Rewind five seconds</li>
+<li>🟡 Fast-forward five seconds</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<ul>
+<li>Use <a href="https://github.com/webosbrew/dev-manager-desktop">Device Manager app</a> - see <a href="https://github.com/DjVreditel/tiktok-webos/releases">Releases</a> for a
+prebuilt <code>.ipk</code> binary file</li>
+<li>Use <a href="https://webostv.developer.lge.com/develop/tools/cli-installation">webOS TV CLI tools</a> -
+<code>ares-install tiktok...ipk</code> (for webOS CLI tools configuration see below)</li>
+</ul>
+<h3 id="autostart">Autostart</h3>
+<p>To autostart an application, the following command needs to be executed
+via SSH or Telnet:</p>
+<pre><code class="lang-sh hljs ">luna-send-pub -n 1 'luna://com.webos.service.eim/addDevice' '{<span class="hljs-string">"appId"</span>:<span class="hljs-string">"tiktok.djvreditel.v1"</span>,<span class="hljs-string">"pigImage"</span>:<span class="hljs-string">""</span>,<span class="hljs-string">"mvpdIcon"</span>:<span class="hljs-string">""</span>}'
+</code></pre>
+<p>This will make "TikTok" display as an eligible input application (next
+to HDMI/Live TV, etc...), and, if it was the last selected input, it will be
+automatically launched when turning on the TV.</p>
+<p>This will also greatly increase startup performance, since it will be running
+constantly in the background, at the cost of increased idle memory usage.
+(So far, relatively unnoticeable in normal usage)</p>
+<p>To disable app autostart run this:</p>
+<pre><code class="lang-sh hljs ">luna-send-pub -n <span class="hljs-number">1</span> <span class="hljs-string">'luna://com.webos.service.eim/deleteDevice'</span> <span class="hljs-string">'{"appId":"tiktok.djvreditel.v1"}'</span>
+</code></pre>
+<h2 id="building">Building</h2>
+<ul>
+<li>Clone the repository</li>
+</ul>
+<pre><code class="lang-sh hljs ">git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/DjVreditel/tiktok-webos.git
+</code></pre>
+<ul>
+<li>Enter the folder and build the App, this will generate a <code>*.ipk</code> file.</li>
+</ul>
+<pre><code class="lang-sh hljs "><span class="hljs-keyword">cd</span> tiktok-webos
+
+# Install dependencies (need <span class="hljs-keyword">to</span> <span class="hljs-keyword">do</span> this <span class="hljs-keyword">only</span> when updating local repository / package.json <span class="hljs-keyword">is</span> changed)
+npm install
+
+npm run compile
+</code></pre>
+<h2 id="development-tv-setup">Development TV setup</h2>
+<h3 id="configuring-webos-tv-cli-tools-with-developer-mode-app">Configuring webOS TV CLI tools with Developer Mode App</h3>
+<p>This is partially based on: <a href="https://webostv.developer.lge.com/develop/getting-started/developer-mode-app">https://webostv.developer.lge.com/develop/getting-started/developer-mode-app</a></p>
+<ul>
+<li>Install Developer Mode app from Content Store</li>
+<li>Enable developer mode, enable keyserver</li>
+<li>Download TV's private key: <code>http://TV_IP:9991/webos_rsa</code></li>
+<li>Configure the device using <code>ares-setup-device</code> (<code>-a</code> may need to be replaced with <code>-m</code> if device named <code>webos</code> is already configured)<ul>
+<li><code>PASSPHRASE</code> is the 6-character passphrase printed on screen in developer mode app</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-sh hljs ">ares-setup-device -a webos -i <span class="hljs-string">"username=prisoner"</span> -i <span class="hljs-string">"privatekey=/path/to/downloaded/webos_rsa"</span> -i <span class="hljs-string">"passphrase=PASSPHRASE"</span> -i <span class="hljs-string">"host=TV_IP"</span> -i <span class="hljs-string">"port=9922"</span>
+</code></pre>
+<h3 id="configuring-webos-tv-cli-tools-with-homebrew-channel-root">Configuring webOS TV CLI tools with Homebrew Channel / root</h3>
+<ul>
+<li>Enable sshd in Homebrew Channel app</li>
+<li>Generate the ssh key on developer machine (<code>ssh-keygen</code>)</li>
+<li>Copy the public key (<code>id_rsa.pub</code>) to <code>/home/root/.ssh/authorized_keys</code> on TV</li>
+<li>Configure the device using <code>ares-setup-device</code> (<code>-a</code> may need to be replaced with <code>-m</code> if device named <code>webos</code> is already configured)</li>
+</ul>
+<pre><code class="lang-sh hljs ">ares-setup-device -a webos -i <span class="hljs-string">"username=root"</span> -i <span class="hljs-string">"privatekey=/path/to/id_rsa"</span> -i <span class="hljs-string">"passphrase=SSH_KEY_PASSPHRASE"</span> -i <span class="hljs-string">"host=TV_IP"</span> -i <span class="hljs-string">"port=22"</span>
+</code></pre>
+<h2 id="installation-2">Installation</h2>
+<pre><code class=" hljs "><span class="hljs-attribute">npm</span> run deploy
+</code></pre><h2 id="launching">Launching</h2>
+<ul>
+<li>The app will be available in the TV's app list or launch it using ares-cli.</li>
+</ul>
+<pre><code class="lang-sh hljs "><span class="hljs-attribute">npm</span> run launch
+</code></pre>
+<h2 id="special-thanks">Special Thanks</h2>
+<p><a href="https://github.com/Informatic">Piotr Dobrowolski</a> and <a href="https://github.com/throwaway96">throwaway96</a> for the <a href="https://github.com/webosbrew/youtube-webos">YouTube AdFree</a> Application and Repo that was taken as the basis of this application</p>
+</div></div></body>                            </html>

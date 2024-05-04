@@ -1,0 +1,30 @@
+{
+  "paging": {
+    "page": 1,
+    "count": 1,
+    "maxPage": 1,
+    "itemsTotal": 1
+  },
+  "packages": [
+    {
+      "id": "tiktok.djvreditel.v1",
+      "title": "TikTok",
+      "iconUri": "https://raw.githubusercontent.com/DjVreditel/tiktok-webos/main/assets/largeIcon.png",
+      "manifest": {
+        "id": "tiktok.djvreditel.v1",
+        "version": "1.0.0",
+        "type": "web",
+        "title": "TikTok",
+        "iconUri": "https://raw.githubusercontent.com/DjVreditel/tiktok-webos/main/assets/largeIcon.png",
+        "sourceUrl": "https://github.com/DjVreditel/tiktok-webos",
+        "rootRequired": false,
+        "ipkUrl": "https://github.com/DjVreditel/tiktok-webos/releases/download/1.0.0/tiktok.djvreditel.v1_1.0.0_all.ipk",
+        "ipkHash": {
+          "sha256": "405b436e5ebb1125d489c2178b19884ec342ba9912dfef964896a39c10d249bc"
+        }
+      },
+      "shortDescription": "Unofficial TikTok App for WebOS with extended features",
+      "fullDescriptionUrl": "https://github.com/DjVreditel/tiktok-webos/blob/main/HomebrewChannel/index.html"
+    }
+  ]
+}
