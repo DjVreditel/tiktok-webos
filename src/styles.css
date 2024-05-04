@@ -1,0 +1,17 @@
+.videoRewind::before {
+  content: '▶▶ 5 sec';
+  font-size: 2rem;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.videoRewind.back::before {
+  content: '◀◀ 5 sec';
+}

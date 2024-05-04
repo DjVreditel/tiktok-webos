@@ -1,0 +1,29 @@
+{
+  "id": "tiktok.djvreditel.v1",
+  "version": "1.0.0",
+  "vendor": "Dj_Vreditel",
+  "type": "web",
+  "main": "index.html",
+  "title": "TikTok",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "iconColor": "#000000",
+  "splashBackground": "splash.png",
+  "splashColor": "#000000",
+  "support360Content": false,
+  "checkUpdateOnLaunch": false,
+  "accessibility": {
+    "supportsAudioGuidance": true
+  },
+  "vendorExtension": {
+    "allowCrossDomain": true
+  },
+  "enablePigScreenSaver": false,
+  "trustLevel": "netcast",
+  "privilegedJail": true,
+  "supportQuickStart": true,
+  "dialAppName": "TikTok",
+  "handlesRelaunch": false,
+  "disableBackHistoryAPI": true,
+  "supportGIP": true
+}
