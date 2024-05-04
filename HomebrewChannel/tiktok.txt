@@ -18,7 +18,7 @@
         "iconUri": "https://raw.githubusercontent.com/DjVreditel/tiktok-webos/main/assets/largeIcon.png",
         "sourceUrl": "https://github.com/DjVreditel/tiktok-webos",
         "rootRequired": false,
-        "ipkUrl": "https://github.com/DjVreditel/tiktok-webos/releases/download/1.0.0/tiktok.djvreditel.v1_1.0.0_all.ipk",
+        "ipkUrl": "https://drive.usercontent.google.com/uc?id=10lgcgX8Tp58hK2tAMD_MTyj4GWTXAKre&export=download",
         "ipkHash": {
           "sha256": "405b436e5ebb1125d489c2178b19884ec342ba9912dfef964896a39c10d249bc"
         }
