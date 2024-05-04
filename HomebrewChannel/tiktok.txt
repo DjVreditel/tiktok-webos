@@ -24,7 +24,7 @@
         }
       },
       "shortDescription": "Unofficial TikTok App for WebOS with extended features",
-      "fullDescriptionUrl": "https://github.com/DjVreditel/tiktok-webos/blob/main/HomebrewChannel/index.html"
+      "fullDescriptionUrl": "https://raw.githubusercontent.com/DjVreditel/tiktok-webos/main/HomebrewChannel/index.html"
     }
   ]
 }
