@@ -12,7 +12,7 @@
       "iconUri": "https://raw.githubusercontent.com/DjVreditel/tiktok-webos/main/assets/largeIcon.png",
       "manifest": {
         "id": "tiktok.djvreditel.v1",
-        "version": "1.0.0",
+        "version": "1.0.2",
         "type": "web",
         "title": "TikTok",
         "iconUri": "https://raw.githubusercontent.com/DjVreditel/tiktok-webos/main/assets/largeIcon.png",
