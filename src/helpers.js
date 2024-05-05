@@ -1,4 +1,4 @@
-const APP_URL = 'https://tv.tiktok.com/webos#home-page';
+const APP_URL = 'https://tv.tiktok.com/webos';
 
 export const startApp = () => {
   window.location.href = APP_URL;
