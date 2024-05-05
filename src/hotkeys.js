@@ -8,12 +8,15 @@ const hitTheLikeBtn = (e) => {
     // Press Like/Dislike Button
     document.querySelector('[aria-label*="like"]').click();
 
-    // Remove focus from the right bar
-    document.querySelector('[data-e2e*="NavigationMenu_Container"]').click();
+    // Remove focus from the right bar if TikTok not asking to log in
+    if (!document.querySelector('[data-e2e*="LoginModal"]')) {
+      document.querySelector('[data-e2e*="NavigationMenu_Container"]').click();
+    }
   }
 };
 
 // Video Rewind
+let lastRemoveNotificationTimerID;
 const videoRewind = (e) => {
   if (e.type === 'keydown') {
     const isForward = getKeyColor(e.keyCode) === 'yellow';
@@ -27,6 +30,8 @@ const videoRewind = (e) => {
 
     // Remove notification before show up new one
     removeNotification();
+    // Clear previous timer
+    clearTimeout(lastRemoveNotificationTimerID);
 
     // Video Rewind
     const newTime = isForward ? player.currentTime + 5 : player.currentTime - 5;
@@ -45,7 +50,7 @@ const videoRewind = (e) => {
     }
 
     // Remove notification after a 1 sec of inactivity
-    setTimeout(() => {
+    lastRemoveNotificationTimerID = setTimeout(() => {
       removeNotification();
     }, 1000);
   }
