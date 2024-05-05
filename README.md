@@ -16,6 +16,19 @@ Unofficial TikTok App for WebOS with extended features
   prebuilt `.ipk` binary file
 - Use [webOS TV CLI tools](https://webostv.developer.lge.com/develop/tools/cli-installation) -
   `ares-install tiktok...ipk` (for webOS CLI tools configuration see below)
+- Use [Homebrew Channel](https://www.webosbrew.org/), add the app source below into the [Homebrew Channel](https://www.webosbrew.org/), and the TikTok app will appear in the list
+
+  Short link — if it isn't available, use the full link (you can also use URL shortener tools so you don't have to enter a long TV link)
+  
+  ```
+  https://tinyurl.com/lg-tiktok
+  ```
+  
+  Original link
+  
+  ```
+  https://raw.githubusercontent.com/DjVreditel/tiktok-webos/main/HomebrewChannel/tiktok.txt
+  ```
 
 ### Autostart
 
