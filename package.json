@@ -1,6 +1,6 @@
 {
   "name": "tiktok-webos",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Unofficial TikTok app for webOS",
   "type": "module",
   "main": "index.js",
