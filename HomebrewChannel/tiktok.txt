@@ -20,7 +20,7 @@
         "rootRequired": false,
         "ipkUrl": "https://drive.usercontent.google.com/uc?id=10lgcgX8Tp58hK2tAMD_MTyj4GWTXAKre&export=download",
         "ipkHash": {
-          "sha256": "405b436e5ebb1125d489c2178b19884ec342ba9912dfef964896a39c10d249bc"
+          "sha256": "173cabca74a422c158954293e549247ddbd7acef04464999855ad052277d1652"
         }
       },
       "shortDescription": "Unofficial TikTok App for WebOS with extended features",

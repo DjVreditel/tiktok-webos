@@ -4,11 +4,15 @@ Unofficial TikTok App for WebOS with extended features
 
 ![Splash](./assets/splash.png)
 
+## [Screenshots](./screenshots/1.png)
+
 ## Extended Features
+
 ### HotKeys
-* 🔴 Like/Dislike 
-* 🟢 Rewind five seconds
-* 🟡 Fast-forward five seconds
+
+- 🔴 Like/Dislike
+- 🟢 Rewind five seconds
+- 🟡 Fast-forward five seconds
 
 ## Installation
 
@@ -19,13 +23,13 @@ Unofficial TikTok App for WebOS with extended features
 - Use [Homebrew Channel](https://www.webosbrew.org/), add the app source below into the [Homebrew Channel](https://www.webosbrew.org/), and the TikTok app will appear in the list
 
   Short link — if it isn't available, use the full link (you can also use URL shortener tools so you don't have to enter a long TV link)
-  
+
   ```
   https://tinyurl.com/lg-tiktok
   ```
-  
+
   Original link
-  
+
   ```
   https://raw.githubusercontent.com/DjVreditel/tiktok-webos/main/HomebrewChannel/tiktok.txt
   ```
@@ -113,5 +117,6 @@ npm run deploy
 npm run launch
 ```
 
-## Special Thanks 
+## Special Thanks
+
 [Piotr Dobrowolski](https://github.com/Informatic) and [throwaway96](https://github.com/throwaway96) for the [YouTube AdFree](https://github.com/webosbrew/youtube-webos) Application and Repo that was taken as the basis of this application
