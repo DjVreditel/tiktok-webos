@@ -1,3 +1,6 @@
+> [!CAUTION]
+> **Service Discontinued:** TikTok TV is no longer available as the service was officially discontinued on June 15, 2025
+
 # TikTok WebOS
 
 Unofficial TikTok App for WebOS with extended features
